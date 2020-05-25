@@ -1,0 +1,67 @@
+/*
+ * Empty Stylesheet file.
+ */
+#parent{
+    -fx-background-image: url(../images/pink-and-purple-wallpaper-1616403.jpg);
+    -fx-background-size: cover;
+    -fx-background-position:center;
+}
+.overlayPane{
+   -fx-background-color: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8));
+}
+.mainPane{
+    -fx-background-color: rgba(0,0,0,0.5);
+    -fx-background-radius: 20px;
+}
+.sideNav{
+       -fx-background-radius: 20px 0px 0px 20px;
+       -fx-background-color: linear-gradient(rgb(0, 206, 193), rgb(1,6,31));
+}
+       .btn{
+              -fx-background-radius: 15px;
+       }
+/*       .btn:hover:after{
+    -fx-content: "";
+    -fx-margin-left: 3px;
+    -fx-margin-top: -4px;
+    -fx-padding: 4px;
+    -fx-background-color: yellow;
+    -fx-border-radius: 50%;
+    -fx-box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.5);
+}*/
+.centerNav{
+       -fx-background-radius: 0px 20px 20px 0px;
+       -fx-background-color: #fff;
+}
+.innnerPane{
+    -fx-background-image: url(../images/pexels-photo-1038727.jpeg);
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: cover;
+   
+}
+.innnerOverlay{
+ -fx-background-color: linear-gradient(rgba(0, 0, 0,0.4), rgba(0, 0, 0,0.8));
+}
+.specialImage{
+     -fx-background-image: url(../images/sceneImages/undraw_medicine_b1ol.png);
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: cover;
+}
+/*.dashBtn{
+      -fx-background-image: url(../images/navIcons/dash.png) no-repeat;
+}*/
+.backtohome:hover{
+    -fx-text-fill:#1abc9c;
+}
+.departmentPane{
+     -fx-background-image: url(../images/pexels-photo-1038727.jpeg);
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: cover;
+}
+
+.titlePane{
+    -fx-background-color: #fff  ;
+}

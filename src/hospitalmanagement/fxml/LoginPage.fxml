@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="Signin_Pane" prefHeight="507.0" prefWidth="1260.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospitalmanagement.controller.LoginPageController">
+   <children>
+      <ImageView fitHeight="514.0" fitWidth="606.0" layoutX="-1.0" layoutY="-2.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/pw1-gif1_-_dribbble.gif" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="-1.0" prefHeight="516.0" prefWidth="606.0" style="-fx-background-color: rgba(0,0,0,0.2);" />
+      <AnchorPane layoutX="605.0" prefHeight="507.0" prefWidth="656.0">
+         <children>
+            <ImageView fitHeight="53.0" fitWidth="69.0" layoutX="467.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8_Natural_Food_100px.png" />
+               </image>
+            </ImageView>
+            <Text fill="#575353" layoutX="526.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pharmacy">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text fill="#24801b" layoutX="275.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOGIN">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Text>
+            <JFXTextField fx:id="txt_username" focusColor="#47a840ed" labelFloat="true" layoutX="136.0" layoutY="180.0" prefHeight="30.0" prefWidth="367.0" promptText="Username" unFocusColor="#4b8f409c">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="txt_password" focusColor="#49a641ed" labelFloat="true" layoutX="136.0" layoutY="261.0" prefHeight="30.0" prefWidth="367.0" promptText="Password" unFocusColor="#4d8f409c">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXCheckBox layoutX="136.0" layoutY="322.0" text="Stay Signed In" textFill="#363434">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXButton fx:id="forgotpassword_btn" layoutX="380.0" layoutY="315.0" text="forgotten password?" textFill="#24801b">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Unlock_100px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="submitBtn" layoutX="136.0" layoutY="367.0" onMouseClicked="#handleSubmitBtn" prefHeight="44.0" prefWidth="131.0" style="-fx-background-color: #24801bed;" text="SIGN IN" textFill="WHITE" />
+            <Label fx:id="lbl_msg" layoutX="251.0" layoutY="457.0" prefHeight="20.0" prefWidth="200.0" />
+         </children>
+      </AnchorPane>
+      <HBox layoutX="-3.0" layoutY="1.0" prefHeight="25.0" prefWidth="91.0" style="-fx-background-color: rgba(255,255,255,0.1);">
+         <children>
+            <ButtonBar prefHeight="25.0" prefWidth="19.0">
+               <buttons>
+                  <OctIconView accessibleRole="BUTTON" fill="#e40707" glyphName="PRIMITIVE_DOT" onMousePressed="#exitLogin" size="25" />
+               </buttons>
+               <tooltip>
+                  <Tooltip text="Close" />
+               </tooltip>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </ButtonBar>
+            <OctIconView fill="#ebd80d" glyphName="PRIMITIVE_DOT" layoutX="10.0" layoutY="28.0" size="25">
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </OctIconView>
+            <ButtonBar>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+               <buttons>
+                  <OctIconView fill="#09e85e" glyphName="PRIMITIVE_DOT" onMousePressed="#minimiseLogin" size="25" />
+               </buttons>
+               <tooltip>
+                  <Tooltip text="Minimize" />
+               </tooltip>
+            </ButtonBar>
+         </children>
+      </HBox>
+      <AnchorPane fx:id="confirmExit_pane" prefHeight="516.0" prefWidth="1261.0" style="-fx-background-color: rgba(0,0,0,0.5);" visible="false">
+         <children>
+            <Pane layoutX="444.0" layoutY="65.0" prefHeight="405.0" prefWidth="501.0" style="-fx-background-color: #fff; -fx-background-radius: 20px;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="183.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/confused.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#2f2c2c" layoutX="184.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm Exit">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Text>
+                  <JFXButton layoutX="139.0" layoutY="298.0" onMousePressed="#leave_appBtn" prefHeight="60.0" prefWidth="114.0" style="-fx-background-color: #03a678; -fx-background-radius: 30px;" text="Yes" textFill="#f2ecec">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icons8_Checked_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton layoutX="265.0" layoutY="298.0" onMousePressed="#backtoSignin_btn" prefHeight="60.0" prefWidth="114.0" style="-fx-background-color: #03a678; -fx-background-radius: 30px;" text="No" textFill="#f2ecec">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icons8_Cancel_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

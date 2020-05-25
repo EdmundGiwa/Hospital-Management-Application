@@ -1,0 +1,85 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-image:url("../images/razer-abstract-4k-g7-3840x2160.jpg");
+    -fx-background-size: cover; 
+}
+.dashContainer{
+    background-color: rgb(38,42,65);
+    border-radius: 20px 20px 20px 20px;
+}
+
+.btn{
+    -fx-text-fill: transparent;
+    -fx-background-radius: 10px;
+    -fx-padding: 0px 0px 0px 20px; 
+}
+.btn_image{
+    -fx-background-image:url("../images/icons8_sorting_answers_filled_80px_1.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+}
+
+.text_field{
+    -fx-background-color: rgba(255,255,255,0.2);
+    -fx-background-radius: 0px 13px 13px 0px;
+    -fx-padding: 10px 0px 10px 20px; 
+    -fx-text-fill: #FFF;
+    -fx-prompt-text-fill: #e6e6e6;
+
+}
+.search_pane{
+    -fx-padding: 10px 0px 10px 20px; 
+    -fx-background-color: rgba(255,255,255,0.2);
+    -fx-background-radius: 13px 0px 0px 13px;
+}
+.search_icon{
+    -fx-background-image:url("../images/navIcons/mainPaneIcons/icons8_search_in_cloud_50px.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+}
+.mainPane_textField{
+    -fx-text-fill: #FFF;
+}
+.speStageDept{
+    -fx-background-image:url("../images/sceneImages/undraw_online_articles_79ff.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+}
+.speStageDoc{
+    -fx-background-image:url("../images/sceneImages/undraw_medicine_b1ol.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+}
+.speStagePatient{
+    -fx-background-image:url("../images/sceneImages/patient.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+}
+.speStageNurse{
+    -fx-background-image:url("../images/sceneImages/undraw_medical_research_qg4d.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+}
+.speStagePharmacist{
+    -fx-background-image:url("../images/sceneImages/pharmarcist.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+}
+
+.homeLinks:hover{
+    -fx-text-fill:  #249681;
+}
+/*     .formPane{
+            -fx-background-image:url("../images/pexels-photo-70292.jpeg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: stretch;
+  -fx-background-position: center;
+  -fx-background-radius: 20px;
+     }
+     .innerFormPane{
+         -fx-background-color: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.8));
+         -fx-background-color: linear-gradient(rgba(38, 42, 65,0.5),rgba(38, 42, 65,1));
+     }*/

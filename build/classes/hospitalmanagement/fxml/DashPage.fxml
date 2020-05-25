@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" styleClass="mainFxmlClass" stylesheets="@../css/dashpage.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospitalmanagement.controller.DashPageController">
+   <children>
+      <AnchorPane layoutY="10.0" prefHeight="761.0" prefWidth="1366.0" style="-fx-background-color: rgba(0,0,0,0.6);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane layoutX="30.0" layoutY="44.0" prefHeight="200.0" prefWidth="1293.0" style="-fx-background-color: #fff; -fx-background-radius: 20px 20px 20px 20px;" styleClass="dashContainer" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="17.0">
+               <children>
+                  <AnchorPane layoutX="676.0" layoutY="8.0" prefHeight="708.0" prefWidth="619.0" style="-fx-background-color: #262A41; -fx-background-radius: 20px 20px 20px 20px;" styleClass="formPane" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="5.0">
+                     <children>
+                        <AnchorPane layoutX="31.0" layoutY="21.0" prefHeight="348.0" prefWidth="558.0" style="-fx-background-radius: 15px;" styleClass="formPane" AnchorPane.bottomAnchor="355.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="21.0">
+                           <children>
+                              <HBox layoutY="14.0" prefHeight="54.0" prefWidth="511.0" AnchorPane.bottomAnchor="292.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="14.0">
+                                 <children>
+                                    <ImageView fitHeight="36.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/navIcons/mainPaneIcons/icons8_plus_2_math_100px.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets left="30.0" top="10.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <Label styleClass="text" text="Add Department" textFill="WHITE">
+                                       <font>
+                                          <Font name="Segoe UI Semibold" size="22.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="9.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <Label layoutX="145.0" layoutY="101.0" text="Department Name" textFill="WHITE">
+                                 <font>
+                                    <Font name="Segoe UI Semilight" size="17.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField focusColor="#01071fb3" layoutX="147.0" layoutY="125.0" prefHeight="30.0" prefWidth="285.0" styleClass="mainPane_textField" unFocusColor="#fff9f9">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="147.0" layoutY="181.0" text="Department Description" textFill="WHITE">
+                                 <font>
+                                    <Font name="Segoe UI Semilight" size="17.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField focusColor="#01071fb3" layoutX="149.0" layoutY="205.0" prefHeight="30.0" prefWidth="285.0" styleClass="mainPane_textField" unFocusColor="#fff9f9">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXButton layoutX="205.0" layoutY="277.0" prefHeight="45.0" prefWidth="175.0" style="-fx-background-color: #01061f; -fx-background-radius: 15px;" text="Save Department" textFill="WHITE">
+                                 <graphic>
+                                    <ImageView fitHeight="36.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/navIcons/mainPaneIcons/icons8_add_100px_1.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </JFXButton>
+                              <Separator layoutX="30.0" layoutY="62.0" prefHeight="0.0" prefWidth="100.0" style="-fx-background-color: #fff;" />
+                           </children>
+                        </AnchorPane>
+                     </children></AnchorPane>
+                  <HBox layoutX="107.0" layoutY="14.0" prefHeight="54.0" prefWidth="599.0" AnchorPane.bottomAnchor="666.0" AnchorPane.leftAnchor="107.0" AnchorPane.rightAnchor="630.0" AnchorPane.topAnchor="14.0">
+                     <children>
+                        <Label styleClass="homeLinks" text="Home/">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label styleClass="text" text="Manage Department" textFill="#01061f">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <ImageView fitHeight="39.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/navIcons/mainPaneIcons/icons8_workers_filled_50px.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <TableView layoutX="37.0" layoutY="109.0" prefHeight="488.0" prefWidth="652.0" style="-fx-background-color: #fff; -fx-background-radius: 15px;" AnchorPane.bottomAnchor="137.0" AnchorPane.leftAnchor="37.0" AnchorPane.rightAnchor="647.0" AnchorPane.topAnchor="109.0">
+                    <columns>
+                      <TableColumn prefWidth="197.0" text="Department Name">
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/navIcons/mainPaneIcons/icons8_dog_tag_100px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </TableColumn>
+                      <TableColumn minWidth="0.0" prefWidth="275.0" text="Department Description">
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/navIcons/mainPaneIcons/icons8_create_new_100px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </TableColumn>
+                        <TableColumn prefWidth="77.0" text="Edit">
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/navIcons/mainPaneIcons/icons8_edit_property_100px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </TableColumn>
+                        <TableColumn prefWidth="94.0" text="Delete">
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/navIcons/mainPaneIcons/icons8_delete_property_100px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </TableColumn>
+                    </columns>
+                  </TableView>
+                  <AnchorPane layoutX="337.0" layoutY="467.0" prefHeight="252.0" prefWidth="362.0" styleClass="speStageDept" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="337.0" AnchorPane.rightAnchor="637.0" AnchorPane.topAnchor="467.0" />
+                  <AnchorPane layoutX="1.0" layoutY="6.0" prefHeight="71.0" prefWidth="73.0" style="-fx-background-radius: 20px 0px 0px 0px;" styleClass="formPane" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fitHeight="45.0" fitWidth="53.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icons8_succulent_filled_100px_2.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
